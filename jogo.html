@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class= "no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>...:::: The Quiz ::::...</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;207;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="font/material-icons.css"> 
+
+</head>
+<body>
+
+    <section class="iniciar">
+        <h1>The</h1>  
+        <h2>Quiz</h2>
+        <p><img class="quiz1" src="img/quiz1.png"></p>  
+        <button>PLAY</button>
+    </section>
+
+    <section class="mind nivel1"> 
+
+      <div id="div1"><h1>Nível 1</h1></div><div id="div2"><p><img class="icon" src="img/clock_b.png">
+      00:<span class="tempo">00</span></p><p><img class="icon" src="img/crown_b.png">
+      <span class="acertos">0</span></p></div>
+        
+      <div class="conteudo">
+          <div class="pergunta">
+            <h1>Quanto é 399 - 207:</h1>
+          </div>
+
+          <ul>
+            <li class="errado"><h1>191</h1></li>
+            <li class="errado"><h1>172</h1></li>
+            <li class="certo c1"><h1>192</h1></li>
+            <li class="errado ajuda"><h1>182</h1></li>
+          </ul>
+
+      </div>
+
+      <div class="inferior">
+          <p class="icones">
+            <button class="material-icon som">volume_off</button>
+            <img class="ajuda" src="img/int.png">
+          </p>
+      </div>
+
+    </section>
+
+    <section class="mind nivel2"> 
+
+      <div id="div1"><h1>Nível 2</h1></div><div id="div2"><p><img class="icon" src="img/clock_b.png">
+      00:<span class="tempo">00</span></p><p><img class="icon" src="img/crown_b.png">
+      <span class="acertos">0</span></p></div>
+          
+      <div class="conteudo">
+        <div class="pergunta">
+            <h1>Qual imagem é uma bola de futebol:</h1>
+        </div>
+  
+        <ul>
+          <li class="errado"><img src="img/basquete.png"></li>
+          <li class="errado ajuda"><img src="img/handebol.png"></li>
+          <li class="certo c2"><img src="img/bola.png"></li>
+          <li class="errado"><img src="img/americano.png"></li>
+        </ul>
+  
+      </div>
+  
+      <div class="inferior">
+        <p class="icones">
+          <button class="material-icon som">volume_off</button>
+          <img class="ajuda" src="img/int.png">
+        </p>
+      </div>
+  
+    </section>
+
+    <section class="mind nivel3"> 
+
+      <div id="div1"><h1>Nível 3</h1></div><div id="div2"><p><img class="icon" src="img/clock_b.png">
+      00:<span class="tempo">00</span></p><p><img class="icon" src="img/crown_b.png">
+       <span class="acertos">0</span></p></div>
+      
+       <div class="conteudo">
+         <div class="pergunta">
+          <h1>Quanto é 50 / 5:</h1>
+        </div>
+
+      <ul>
+          <li class="errado"><h1>12</h1></li>
+          <li class="errado ajuda"><h1>5</h1></li>
+          <li class="errado"><h1>25</h1></li>
+          <li class="certo c3"><h1>10</h1></li>
+        </ul>
+
+      </div>
+
+
+      <div class="inferior">
+        <p class="icones">
+          <button class="material-icon som">volume_off</button>
+          <img class="ajuda" src="img/int.png">
+        </p>
+      </div>
+
+    </section>
+
+
+    <section class="mind nivel4"> 
+
+      <div id="div1"><h1>Nível 4</h1></div><div id="div2"><p><img class="icon" src="img/clock_b.png">
+      00:<span class="tempo">00</span></p><p><img class="icon" src="img/crown_b.png">
+      <span class="acertos">0</span></p></div>
+      
+      <div class="conteudo">
+        <div class="pergunta">
+          <h1>Quanto é 23 x 12:</h1>
+        </div>
+
+        <ul>
+          <li class="certo c4"><h1>276</h1></li>
+          <li class="errado ajuda"><h1>47</h1></li>
+          <li class="errado"><h1>236</h1></li>
+          <li class="errado"><h1>267</h1></li>
+        </ul>
+
+    </div>
+
+    <div class="inferior">
+      <p class="icones">
+        <button class="material-icon som">volume_off</button>
+        <img class="ajuda" src="img/int.png"> 
+      </p>
+    </div>
+
+    </section>
+
+    <section class="final">
+      <h1>FIM DE JOGO!</h1>
+
+      <div class="pontos">
+        <p>
+          <span class="pontuacao">Pontuação: </span>
+          <span class="acertos"> </span>
+        </p>
+        <p>
+          <span class="duracao">Tempo: </span>
+          <span class="tempoTotal" id="tempo"> </span>
+        </p>
+      </div>
+
+      <img class="cerebro_fim" src="img/quiz2.png">
+
+      <button>Jogar Novamente</button>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+    function load(){
+      somFundo = new Audio("musicas/musica1.mp3");
+
+      somCorreto = new Audio("musicas/correct.mp3");
+
+      somErro = new Audio("musicas/error.mp3");
+
+      somFinal = new Audio("musicas/final.mp3");
+
+      setInterval(function(){
+        $("section.iniciar img.cerebro").animate({top:"-20px"},1500).animate({top:"10px"},1500);},3000);
+
+      setInterval(function(){
+        $("section.final img.cerebro_fim").animate({top:"-20px"},1500).animate({top:"10px"},1500);},3000);
+    }
+
+    load();
+
+      $("section.iniciar button").on("click", function() {
+      //transição de tela
+      $("section").hide();
+      $("section.nivel1").show();
+      contagem = setInterval(function(){
+        var tempo = parseInt($('span.tempo').text());
+        soma = tempo + 1;
+        if (soma < 10) {
+          soma = "0"+soma;
+        };
+        $('span.tempo').text(soma + " s");
+        $("#tempo").text(soma + " s");
+      },1000);
+      });
+
+      $("section.mind button.som").on("click", function(){
+      textoDoBotao = $(this).text();
+
+      if(textoDoBotao == "volume_off"){
+        somFundo.play();
+        $(this).text("volume_up");
+      } else{
+        somFundo.pause();
+        $(this).text("volume_off");
+      }
+      });
+
+      $("li.errado").one("click", function(){
+        $(this).css({backgroundColor: "#FB3333"});
+        somErro.play();
+      });
+
+      $("img.ajuda").one("click", function(){
+        $(this).parents(".mind").find("li.ajuda").css({backgroundColor: "#FB3333"});
+        $(this).css({opacity: 0.5});
+        
+      });
+
+      $("li.certo").one("click", function(){
+        $(this).css({backgroundColor: "#68EF48"});
+        var certo = parseInt($('span.acertos').eq(0).text());
+        soma = certo + 1;
+        $('span.acertos').text(soma);
+        somCorreto.play();
+
+        if (soma==4) {
+            clearInterval(contagem); 
+        }
+      });
+
+      $("li.c1").one("click", function(){
+          $("section.nivel1").hide();
+          $("section.nivel2").show();
+      });
+
+      $("li.c2").one("click", function(){
+          $("section.nivel2").hide();
+          $("section.nivel3").show();
+      });
+
+      $("li.c3").one("click", function(){
+          $("section.nivel3").hide();
+          $("section.nivel4").show();
+      });
+
+      $("li.c4").one("click", function(){
+          $("section.nivel4").hide();
+          $("section.final").show();
+          somFundo.pause();
+          somFinal.play();
+      });
+
+      $("section.final button").on("click", function() {
+      window.location.reload(true);
+      $("section").hide();
+      $("section.iniciar").show();
+      }); 
+    
+    </script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/*  TELAS */
+/*section.iniciar{display: none;}*/
+section.nivel1{display: none;}
+section.nivel2{display: none;}
+section.nivel3{display: none;}
+section.nivel4{display: none;}
+section.final{display: none;}
+
+/* ICON */
+@font-face {
+    font-family: material;
+    src: url('../font/MaterialIcons-Regular.ttf');
+}
+
+.material-icon{
+    font-family: material;
+}
+
+/* BODY*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section, body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+section.iniciar{
+    text-align: center;
+    background-color: cadetblue;
+    background-size: 100%;
+}
+
+section.iniciar h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.8em;
+    font-weight: bold;
+    margin: 7vh 5vw 0 5vw;
+    color: #0ff;
+}
+
+section.iniciar h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 4.5em;
+    margin: 1.2vh 14vw 0 14vw;
+    color: white;
+}
+
+section.iniciar p{
+    margin: 7vh 0;
+}
+
+section.iniciar p img{
+    height: 35vh;
+    position: relative;
+}
+
+section.iniciar button{
+    background: white;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: #0ff;
+    width: 65vw;
+    margin: auto;
+    padding: 3px 0;
+    border-radius: 16px;
+    box-shadow: #000000;
+}
+
+section.mind{
+    background-color: #a7b8d9;
+}
+
+section.mind div {
+    display: inline-block;
+ }
+
+section.mind #div1 {
+    height: 65px;
+    width: 55%;
+    background-color: cade;
+    vertical-align: top;
+}
+
+section.mind #div1 h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 2em;
+}
+    
+section.mind #div2 {
+    height: 90px;
+    width: 45%;
+    background-color:red;
+    border-radius: 0 0 16px 16px;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+section.mind #div2 p{
+    margin-top: 1.8vh;
+    margin-left: 5vw;
+}
+
+section.mind #div2 p img.icon{
+    height: 25px;
+    width: 25px;
+}
+
+section.mind .conteudo{
+    height: 68%;
+    width: 95%;
+    padding: 4vh 2vw 0 2vw;
+}
+
+section.mind .conteudo .pergunta{
+    font-size: 1em;
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: black;
+    margin-bottom: 1.2vh;
+}
+
+section.mind .conteudo .pergunta h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 3vh 1.5vw 0.5vh 3vw;
+    margin-top: 30px;
+}
+
+section.mind .conteudo .pergunta h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    padding: 2vh 1.5vw 0.5vh 3vw;
+}
+
+section.mind .conteudo ul{ 
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+}
+
+section.mind .conteudo ul li{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    margin-top: 2vh;
+    border-radius: 16px;
+}
+
+section.mind .conteudo ul li h1{
+    padding-top: 2vh;
+}
+
+section.mind .inferior{
+    height: 80px;
+    width: 45%;
+    background-color: red;
+    border-radius: 16px 16px 0 0;
+    color: white;
+    font-size: 1.9em;
+    vertical-align: bottom;
+    margin-left: 55%;
+}
+
+section.mind .inferior p button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 2vh 4vw 2vh 4vh;
+}
+
+section.mind .inferior p img{
+    width: 26%;
+    height: 26%;
+}
+
+
+section.mind .conteudo .pergunta{
+    font-size: 1.4em;
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: black;
+    margin-bottom: 1.5vh;
+}
+
+section.mind .conteudo .pergunta img{
+    margin-top: 1vh;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+section.mind .conteudo ul{ 
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section.nivel2 .conteudo ul li{
+    height: 110px;
+    width: 130px;
+    background-color: white;
+    margin-top: 2vh;
+    border-radius: 16px;
+}
+
+section.nivel2 .conteudo ul li img{
+    margin-top: 2vh;
+    width: 75%;
+    height: 75%;
+}
+
+
+
+section.final{
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+section.final h1{
+    font-weight: bold;
+    margin-top: 7vh;
+    font-size: 3em;
+}
+
+section.final .pontos{
+    font-weight: bold;
+    width: 250px;
+    height: 100px;
+    background: red;
+    font-size: 1.8em;
+    border-radius: 16px;
+    margin-top: 7vh;
+    padding: 2vh;
+    box-shadow: black;
+    margin-left: 7vw;
+}
+
+section.final .pontos p{
+    margin-top: 2vh;
+    font-size: 1.1em;
+    text-align: left;
+    margin-bottom: 1vh;
+    margin-left: 8vw;
+}
+
+section.final .cerebro_fim{
+    margin: 7vh 0 0 0;
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+section.final button{
+    background: white;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #0ff;
+    width: 250px;
+    padding: 8px 0;
+    border-radius: 16px;
+    box-shadow: #000000;
+    margin-top: 3vh;
+}
